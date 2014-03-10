@@ -31,7 +31,7 @@ Pass...2
 end address = 0000011B
 label(s)    = 1
 
-A:\>HeLLO
+A:\>HELLO
 Hello, World!
 
 ````
