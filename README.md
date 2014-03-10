@@ -11,7 +11,7 @@ A86 <source> [<options>]
 
 example:
 ````
-A:\>TYPE HELLOW.ASM
+A:\>TYPE HELLO.ASM
 	ORG	100H
 
 	MOV	AH,9
