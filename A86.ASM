@@ -3,8 +3,6 @@
 ;
 ;TODO:	check error when reading/writing file (ERR1/ERR3)
 ;
-;FIXED:	ERR0 -> ERR2 when create file
-;
 
 	ORG	100H
 
