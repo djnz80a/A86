@@ -5813,26 +5813,26 @@ LDIR:	PUSH	SI
 _RET:	RET
 
 
-EMES0:	DEFM	'Read file open error$'
-EMES1:	DEFM	'Read file read error$'
-EMES2:	DEFM	'Write file make error$'
-EMES3:	DEFM	'Write file write error$'
-EMES4:	DEFM	'Label error$'
-EMES5:	DEFM	'Multiply Defined label$'
-EMES6:	DEFM	'Format error$'
-EMES7:	DEFM	'Number error$'
-EMES8:	DEFM	'Label table full$'
-EMES9:	DEFM	'Undefined label$'
-EMESA:	DEFM	'Reference error$'
-EMESB:	DEFM	'Operand error$'
-EMESC:	DEFM	'Include error$'
-EMESD:	DEFM	'Too long line$'
+EMES0:	DB	'Read file open error$'
+EMES1:	DB	'Read file read error$'
+EMES2:	DB	'Write file make error$'
+EMES3:	DB	'Write file write error$'
+EMES4:	DB	'Label error$'
+EMES5:	DB	'Multiply Defined label$'
+EMES6:	DB	'Format error$'
+EMES7:	DB	'Number error$'
+EMES8:	DB	'Label table full$'
+EMES9:	DB	'Undefined label$'
+EMESA:	DB	'Reference error$'
+EMESB:	DB	'Operand error$'
+EMESC:	DB	'Include error$'
+EMESD:	DB	'Too long line$'
 
-MES1:	DEFM	'==== 8086 Self Assembler ===='
+MES1:	DB	'==== 8086 Self Assembler ===='
 	DB	0DH,0AH
-	DEFM	'       Programed by djnz80a'
+	DB	'       Programed by djnz80a'
 	DB	0DH,0AH,'$'
-MES2:	DEFM	'Pass...$'
+MES2:	DB	'Pass...$'
 
 
 STR_ASM:DB	'.ASM',0
