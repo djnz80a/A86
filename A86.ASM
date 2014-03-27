@@ -5914,12 +5914,12 @@ LOAD.F:	DW	0	;including file no.
 FCB:	DW	0	;pointer to fcb
 
 FILE2:
-	DEFS	80;100	;write file
-	DB	'T.COM',0
+	DEFS	80	;write file
+	;DB	'T.COM',0
 
 FILE1:
-	DEFS	80;100	;read file
-	DB	'T.ASM',0
+	DEFS	80	;read file
+	;DB	'T.ASM',0
 
 	DEFS	270H	;for 16 files
 
@@ -5929,9 +5929,9 @@ QUOTATION:	DB	0
 
 LBL.PNT.NEXT:	DW	0
 
-LBL.PNT.TOP:	DEFS	200H;100H*2
+LBL.PNT.TOP:	DEFS	200H	;100H*2
 
-LBL.PNT:	DEFS	200H;100H*2
+LBL.PNT:	DEFS	200H	;100H*2
 
 USRDMA:
 
