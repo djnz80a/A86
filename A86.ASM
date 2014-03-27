@@ -1366,60 +1366,60 @@ SUBWRK:	DS	16
 
 ;*************************************
 
-OP.TBL:	DEFB	8
-	DEFW	PNT.A
-	DEFB	2
-	DEFW	PNT.B
-	DEFB	9
-	DEFW	PNT.C
-	DEFB	13
-	DEFW	PNT.D
-	DEFB	1
-	DEFW	PNT.E
-	DEFB	0
-	DEFW	0	;F
-	DEFB	0
-	DEFW	0	;G
-	DEFB	0
-	DEFW	PNT.H
-	DEFB	6
-	DEFW	PNT.I
-	DEFB	30
-	DEFW	PNT.J
-	DEFB	0
-	DEFW	0	;K
-	DEFB	8
-	DEFW	PNT.L
+OP.TBL:	DB	8
+	DW	PNT.A
+	DB	2
+	DW	PNT.B
+	DB	9
+	DW	PNT.C
+	DB	13
+	DW	PNT.D
+	DB	1
+	DW	PNT.E
+	DB	0
+	DW	0	;F
+	DB	0
+	DW	0	;G
+	DB	0
+	DW	PNT.H
+	DB	6
+	DW	PNT.I
+	DB	30
+	DW	PNT.J
+	DB	0
+	DW	0	;K
+	DB	8
+	DW	PNT.L
 
-	DEFB	7
-	DEFW	PNT.M	;M
+	DB	7
+	DW	PNT.M	;M
 
-	DEFB	3
-	DEFW	PNT.N
-	DEFB	3
-	DEFW	PNT.O
-	DEFB	10
-	DEFW	PNT.P
-	DEFB	0
-	DEFW	0	;Q
-	DEFB	10
-	DEFW	PNT.R
-	DEFB	16
-	DEFW	PNT.S
-	DEFB	1
-	DEFW	PNT.T	;T
-	DEFB	0
-	DEFW	0	;U
-	DEFB	0
-	DEFW	0	;V
-	DEFB	0
-	DEFW	0	;W
-	DEFB	3
-	DEFW	PNT.X
-	DEFB	0
-	DEFW	0	;Y
-	DEFB	0
-	DEFW	0	;Z
+	DB	3
+	DW	PNT.N
+	DB	3
+	DW	PNT.O
+	DB	10
+	DW	PNT.P
+	DB	0
+	DW	0	;Q
+	DB	10
+	DW	PNT.R
+	DB	16
+	DW	PNT.S
+	DB	1
+	DW	PNT.T	;T
+	DB	0
+	DW	0	;U
+	DB	0
+	DW	0	;V
+	DB	0
+	DW	0	;W
+	DB	3
+	DW	PNT.X
+	DB	0
+	DW	0	;Y
+	DB	0
+	DW	0	;Z
 
 PNT.A:	DB	'DD   '
 	DW	C.ADD
@@ -5830,9 +5830,9 @@ EMESC:	DEFM	'Include error$'
 EMESD:	DEFM	'Too long line$'
 
 MES1:	DEFM	'==== 8086 Self Assembler ===='
-	DEFB	0DH,0AH
+	DB	0DH,0AH
 	DEFM	'       Programed by djnz80a'
-	DEFB	0DH,0AH,'$'
+	DB	0DH,0AH,'$'
 MES2:	DEFM	'Pass...$'
 
 
