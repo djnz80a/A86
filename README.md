@@ -3,7 +3,7 @@ A86
 8086/386 Self Assembler for MS-DOS
 
 A86.COM runs on MS-DOS 16-bit mode,
-can create MS-DOS 16-bit COM executable and 32-bit RAW format file.
+can create MS-DOS 16-bit COM executable and 16/32-bit RAW format file.
 
 build:
 ````
