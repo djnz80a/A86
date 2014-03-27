@@ -1232,9 +1232,9 @@ SUB5:	POP	AX	;dummy
 	DEC	CL
 	JE	SUBI
 	DEC	CL
-	JE	SUBIF
+	;JE	SUBIF
 	DEC	CL
-	JE	SUBM
+	;JE	SUBM
 SUBE:	MOV	DX,SUBEM1
 	CALL	DOS09
 	JMP	ERR6
@@ -1351,17 +1351,11 @@ SUBI7:
 ;
 ;
 ;
-SUBM:
+;SUBM:
 
-SUBIM1:	DB	'LOADING...$'
+;SUBIF:
 
-SUBIF:
-
-SUBENDIF:
-
-IF.FLG:	DB	0
-
-SUBWRK:	DS	16
+;SUBENDIF:
 
 ;*************************************
 
@@ -2221,9 +2215,6 @@ C.CACC:
 	MOV	AL,AH
 C.CACC.B:
 	JMP	SETD1
-
-
-BDAT:	DS	10H
 
 ;
 ;
@@ -5828,6 +5819,8 @@ EMESB:	DB	'Operand error$'
 EMESC:	DB	'Include error$'
 EMESD:	DB	'Too long line$'
 
+SUBIM1:	DB	'LOADING...$'
+
 MES1:	DB	'==== 8086 Self Assembler ===='
 	DB	0DH,0AH
 	DB	'       Programed by djnz80a'
@@ -5896,6 +5889,12 @@ VAL2:	DD	0
 F.TYPE:	DB	0
 
 MOD2:	DB	0
+
+IF.FLG:	DB	0
+
+SUBWRK:	DS	16
+
+BDAT:	DS	10H
 
 L.DATA:	DS	LINESIZE+20
 
